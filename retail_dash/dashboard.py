@@ -59,11 +59,12 @@ st.set_page_config(page_title="📊 KPI Дашборд", layout="wide")
 st.title("📊 Интерактивный дашборд розничной аналитики")
 
 # === Загрузка данных из локальных файлов (внутри репозитория) ===
-abc_df = pd.read_excel("abc_analysis_dynamic.xlsx")
-season_df = pd.read_excel("seasonality_index.xlsx")
-internet_df = pd.read_excel("internet_dynamic.xlsx")
-growth_df = pd.read_excel("growth_table.xlsx")
-asp_df = pd.read_excel("avg_price.xlsx")
+abc_df = pd.read_excel("retail_dash/abc_analysis_dynamic.xlsx")
+season_df = pd.read_excel("retail_dash/seasonality_index.xlsx")
+internet_df = pd.read_excel("retail_dash/internet_dynamic.xlsx")
+growth_df = pd.read_excel("retail_dash/growth_table.xlsx")
+asp_df = pd.read_excel("retail_dash/avg_price.xlsx")
+
 
 # === Секция 1: ABC-анализ ===
 st.subheader("📘 ABC-анализ по месяцам")
